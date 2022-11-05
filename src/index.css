@@ -25,11 +25,12 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: row;
+  min-width: 100%;
+  min-height: 100%;
 }
 
 h1 {

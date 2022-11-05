@@ -15,7 +15,7 @@ function App() {
           <a href="https://vitejs.dev" target="_blank">
             <img src="/vite.svg" className="vite" alt="Vite logo" />
           </a>
-          <a href="https://reactjs.org" target="_blank">
+          <a href="https://kenganverse.fandom.com/wiki/Kengan_Ashura_(manga)" target="_blank">
             <img src={kangLiu} className="logo" alt="React logo" />
           </a>
         </div>
@@ -31,7 +31,9 @@ function App() {
         <button onClick={() => setNumber((number) => number - 1)}>
           number is {number}
         </button>
-        <p>
+      </div>
+      <div className="typography">
+      <p>
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>

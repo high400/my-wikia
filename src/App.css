@@ -14,10 +14,7 @@
 }
 
 /* this header is the replacement for "App" above. It is called "Header" file  */
-.header {
-  width: 100%;
-  height: 100%;
-}
+
 /* this header is the replacement for "App" above. It is called "Header" file  */
 /* This is within the "Header" file  */
 .logo {
@@ -49,5 +46,64 @@
   text-align: center;
 }
 /* What is within "GetNames" will show up here  */
+/* What is within "Footer" will show up here  */
+.footer {
+  background-color: #0c65f4;
+  color: #8597b5;
+  justify-content: space-between;
+  text-align: center;
+  width: 100%;
+  height: 100%;  
+}
+/* What is within "Footer" will show up here  */
+/* Common style for button  */
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+/* Common style for button  */
+/* Common style for body and h1  */
+body {
+  margin: 0 auto;
+  display: flex;
+  place-items: center;
+  flex-direction: row;
+}
+
+h1 {
+  font-size: 2.1em;
+  line-height: 1.1;
+}
+h2 { 
+  text-align: center;
+}
+/* Common style for body and h1, h2  */
 
 /* Anything that is inside of "App" will show up here */

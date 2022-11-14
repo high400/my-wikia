@@ -1,18 +1,22 @@
 import React, { useState } from "react";
-import kangLiu from "../assets/revenant_kang_liu_1.png";
 import "../App.css";
 
 type Props = {};
 
 const Header = (props: Props) => {
+  const headerStyle = {
+    backgroundColor: "#b195f4",
+    color: "#500cf4",
+    width: "full",
+    height: "100%",
+    display: "flex",
+    justifyContent: "space-between",
+    
+  };
+
   return (
-    <div className="header">
-      <a
-        href="https://kenganverse.fandom.com/wiki/Kengan_Ashura_(manga)"
-        target="_blank"
-      >
-        <img src={kangLiu} className="logo" alt="React logo" />
-      </a>
+    <div style={headerStyle}>
+      <h1>List of mangas that I love to read</h1>
     </div>
   );
 };

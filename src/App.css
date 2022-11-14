@@ -5,45 +5,33 @@
   text-align: center;
 }
 
+/* Anything that is inside of "App" will show up here */
+
 .App {
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
+/* this header is the replacement for "App" above. It is called "Header" file  */
+.header {
+  width: 100%;
+  height: 100%;
+}
+/* this header is the replacement for "App" above. It is called "Header" file  */
+/* This is within the "Header" file  */
 .logo {
   height: 100%;
   width: 100%;
   will-change: filter;
   align-items: center;
 }
-.vite {
-  height: 100%;
-  width: 30%;
-  will-change: filter;
-}
-.vite:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
 
 .logo:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
+/* This is within the "Header" file  */
+/* What is within "ClickBait" will show up here  */
 .card {
   width: 100%;
   height: 100%;
@@ -52,23 +40,14 @@
   flex-wrap: space-evenly;
 }
 
-.typography {
-  width: 100%;
-  height: 100%;
-  padding: 6em;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  align-items: center;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
+/* What is within "ClickBait" will show up here  */
+/* What is within "GetNames" will show up here  */
 .container {
   display: flex;
   flex-direction: column;
   background-color: red;
   text-align: center;
 }
+/* What is within "GetNames" will show up here  */
+
+/* Anything that is inside of "App" will show up here */

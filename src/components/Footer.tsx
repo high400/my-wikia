@@ -8,7 +8,7 @@ const Footer = (props: Props) => {
   const footerStyle = {
     backgroundColor: "#0c65f4",
     color: "#8597b5",
-    width: "full",
+    width: "100%",
     height: "100%",
     justifyContent: "space-between",
     textAlign: "center" as const,     // I had to go through the pain in the ass things to fix this textAlign thing

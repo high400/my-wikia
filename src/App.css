@@ -40,8 +40,6 @@
 /* What is within "ClickBait" will show up here  */
 /* What is within "GetNames" will show up here  */
 .container {
-  display: flex;
-  flex-direction: column;
   background-color: red;
   text-align: center;
 }

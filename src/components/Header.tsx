@@ -7,11 +7,10 @@ const Header = (props: Props) => {
   const headerStyle = {
     backgroundColor: "#b195f4",
     color: "#500cf4",
-    width: "full",
+    width: "100%",
     height: "100%",
-    display: "flex",
     justifyContent: "space-between",
-    
+    textAlign: "center" as const
   };
 
   return (

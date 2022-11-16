@@ -10,12 +10,13 @@ const Header = (props: Props) => {
     width: "100%",
     height: "100%",
     justifyContent: "space-between",
-    textAlign: "center" as const
+    textAlign: "center" as const,
+    fontSize: "20px",
   };
 
   return (
-    <div style={headerStyle}>
-      <h1>List of mangas that I love to read</h1>
+    <div className="header">
+      List of mangas that I love to read
     </div>
   );
 };

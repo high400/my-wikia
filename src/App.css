@@ -5,53 +5,122 @@
   text-align: center;
 }
 
+/* Universal code, mwa ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 22px;
+}
+
+/* Universal code, mwa ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha ha */
+
 /* Anything that is inside of "App" will show up here */
 
 .App {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid mediumblue;
+  margin: auto;
+}
+
+/* this header is the replacement for "App" above. It is called "Header" file  */
+/* This is within the "Header" file  */
+.header {
+  width: 100%;
+  padding: 0 0.25em;
+  background-color: mediumblue;
+  color: aliceblue;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
 }
-
-/* this header is the replacement for "App" above. It is called "Header" file  */
-
-/* this header is the replacement for "App" above. It is called "Header" file  */
 /* This is within the "Header" file  */
-.logo {
-  height: 100%;
-  width: 100%;
-  will-change: filter;
-  align-items: center;
-}
-
-.logo:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-/* This is within the "Header" file  */
-/* What is within "ClickBait" will show up here  */
-.card {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: space-evenly;
-}
-
-/* What is within "ClickBait" will show up here  */
 /* What is within "GetNames" will show up here  */
 .container {
-  background-color: red;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center;
+  overflow-y: auto;
+}
+ul {
+  width: 100%;
+  list-style: none;
+  padding: 0 0.25rem 0.25rem;
+}
+
+ul li::before {
+  content: "\200B";
+}
+
+.item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0.5rem 0 0.5rem 0.5rem;
+  margin: 0.25rem 0;
+  background-color: #34669e;
+}
+
+.item:first-child {
+  margin: 0;
+}
+
+.item input[type="checkbox"] {
   text-align: center;
+  width: 2.5rem;
+  width: 48px;
+  min-width: 48px;
+  height: 2.5rem;
+  height: 48px;
+  min-height: 48px;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+
+.item input[type="checkbox"]:focus + label {
+  text-decoration: underline;
+}
+
+.item > label {
+  font-size: 0.75rem;
+  flex-grow: 1;
+}
+
+.item svg {
+  width: 48px;
+  min-width: 48px;
+  height: 36px;
+  font-size: 1rem;
+  color: steelblue;
+  cursor: pointer;
+}
+
+.item svg:focus, 
+.item svg:hover {
+  color: red;
+  outline: none;
 }
 /* What is within "GetNames" will show up here  */
 /* What is within "Footer" will show up here  */
 .footer {
-  background-color: #0c65f4;
-  color: #8597b5;
-  justify-content: space-between;
-  text-align: center;
   width: 100%;
-  height: 100%;  
+  padding: 0.25em;
+  background-color: mediumblue;
+  color: aliceblue;
+  display: grid;
+  place-content: center;
 }
 /* What is within "Footer" will show up here  */
 /* Common style for button  */
@@ -89,19 +158,18 @@ button:focus-visible {
 /* Common style for button  */
 /* Common style for body and h1  */
 body {
-  margin: 0 auto;
-  display: flex;
-  place-items: center;
-  flex-direction: row;
+  min-height: 100vh;
+  font-family: "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1 {
   font-size: 2.1em;
   line-height: 1.1;
 }
-h2 { 
-  text-align: center;
-}
+
 /* Common style for body and h1, h2  */
 
 /* Anything that is inside of "App" will show up here */

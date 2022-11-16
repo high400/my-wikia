@@ -15,7 +15,7 @@ const Footer = (props: Props) => {
   };
 
   return (
-    <div style={footerStyle}>
+    <div className="footer">
      <h3> Copyright &copy; {today.getFullYear()} </h3>
     </div>
   );

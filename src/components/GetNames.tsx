@@ -1,30 +1,29 @@
 import React, { useState } from "react";
 import "../App.css";
+import {FaTrashAlt} from "react-icons/fa";
 
 type Props = {};
 
 const GetNames = (props: Props) => {
-  const [names, setNames] = useState("Hung");
-
-  const handleName = () => {
-    const names = ["Hung", "Hoang", "Minh", "Trang", "Hien", "Thuy Linh"];
-    const int = Math.floor(Math.random() * 6);
-    setNames(names[int]);
-  };
-
-  const handleClick = (e: any) => {
-    // alert(e.target.innerText);
-    alert ("Hah, you suckers. You clicked on it. It was a clickbait to bait you, mwa ha ha ha ha ha")
-  };
+  const [items, setItems] = useState([
+    { id: 1, checked: false, item: "item 1" },
+    { id: 2, checked: false, item: "item 2" },
+    { id: 3, checked: false, item: "item 3" },
+    { id: 4, checked: false, item: "item 4" }
+  ]);
 
   return (
     <>
       <div className="container">
-        <p>Hello {names}</p>
-        {/* The "handleName" function generates the name of each person within the array that I created         */}
-        <button onClick={handleName}>Change the name</button>
-        {/* When I click on this button, the name will change  */}
-        <button onClick={handleClick}>Show the alert</button>
+        <ul>
+         {items.map((item) => (
+          <li key={item.id} className="item">
+            <input type="checkbox" />
+            <label>{item.item}</label>
+            <FaTrashAlt role="button" tabIndex="0" />
+          </li>
+         ))}
+        </ul>
       </div>
     </>
   );

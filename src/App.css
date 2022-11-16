@@ -27,7 +27,7 @@ html {
   align-items: center;
   height: 100%;
   width: 100%;
-  max-width: 500px;
+  max-width: 500px; /*  Will fix this as "420px" later on  */
   border: 1px solid mediumblue;
   margin: auto;
 }

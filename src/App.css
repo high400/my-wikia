@@ -27,7 +27,8 @@ html {
   align-items: center;
   height: 100%;
   width: 100%;
-  max-width: 500px; /*  Will fix this as "420px" later on  */
+  min-width: 500px; /*  Will fix this as "420px" later on  */
+  /* max-width: 1080px;  */
   border: 1px solid mediumblue;
   margin: auto;
 }
@@ -96,6 +97,7 @@ ul li::before {
 .item > label {
   font-size: 0.75rem;
   flex-grow: 1;
+  text-align: left; 
 }
 
 .item svg {

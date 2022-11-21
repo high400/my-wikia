@@ -27,8 +27,9 @@ html {
   align-items: center;
   height: 100%;
   width: 100%;
-  min-width: 500px; /*  Will fix this as "420px" later on  */
-  /* max-width: 1080px;  */
+  /* min-width: 500px;  */
+  /*  Will fix this min-width as "420px" later on  */
+  max-width: 1920px;
   border: 1px solid mediumblue;
   margin: auto;
 }
@@ -38,7 +39,7 @@ html {
 .header {
   width: 100%;
   padding: 0 0.25em;
-  background-color: mediumblue;
+  background-color: #0000cd;
   color: aliceblue;
   justify-content: space-between;
   align-items: center;
@@ -97,7 +98,7 @@ ul li::before {
 .item > label {
   font-size: 0.75rem;
   flex-grow: 1;
-  text-align: left; 
+  text-align: left;
 }
 
 .item svg {
@@ -109,7 +110,7 @@ ul li::before {
   cursor: pointer;
 }
 
-.item svg:focus, 
+.item svg:focus,
 .item svg:hover {
   color: red;
   outline: none;

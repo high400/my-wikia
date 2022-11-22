@@ -5,9 +5,9 @@ type Props = {};
 
 const Header = (props: Props) => {
   const headerStyle = {
-    backgroundColor: "#0000cd",
+    backgroundColor: "#000080",
     // The "#0000cd" code is for "medium blue"
-    color: "#F0F8FF",
+    color: "#edeaed",
     // The "#F0F8FF" code is for "alice blue"
     width: "100%",
     height: "100%",

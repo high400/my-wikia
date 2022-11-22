@@ -6,8 +6,8 @@ type Props = {};
 const Footer = (props: Props) => {
   const today = new Date();
   const footerStyle = {
-    backgroundColor: "#0c65f4",
-    color: "#8597b5",
+    backgroundColor: "#000080",
+    color: "#edeaed",
     width: "100%",
     height: "100%",
     justifyContent: "space-between",
@@ -15,6 +15,7 @@ const Footer = (props: Props) => {
     display: "grid",
     placeContent: "center",
     padding: "0.25em",
+    fontSize: "14px",
   };
 
   return (

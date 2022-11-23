@@ -7,11 +7,11 @@ function App() {
   return (
     <>
       <div className="App">
-        <Header />
+        <Header title="Lists of mangas I hate(and love) to read" />
+        {/* Fixed it "Header.tsx". Check the file to know more  */}
         <GetNames />
         <Footer />
       </div>
-
     </>
   );
 }

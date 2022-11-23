@@ -1,9 +1,12 @@
-import React, { useState } from "react";
 import "../App.css";
 
-type Props = {};
+type Props = {
+  title: string,
+};
+// You fix this "title" problem by typing in the "type Props {}" right there. What a pain in the butt
 
 const Header = (props: Props) => {
+  // Keep in mind, in typescript, we cannot call title the way we do in Javascript files
   const headerStyle = {
     backgroundColor: "#000080",
     // The "#0000cd" code is for "medium blue"
@@ -20,7 +23,7 @@ const Header = (props: Props) => {
 
   return (
     <div style={headerStyle}>
-      List of mangas that I love to read
+      {props.title}
     </div>
   );
 };

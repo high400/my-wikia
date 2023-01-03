@@ -8,7 +8,7 @@ function App() {
     <>
       <div className="App">
         <Header title="Lists of mangas I hate(and love) to read" />
-        {/* Fixed it "Header.tsx". Check the file to know more  */}
+        {/* Fixed it in "Header.tsx". Check the file to know more  */}
         <GetNames />
         <Footer />
       </div>

@@ -168,6 +168,10 @@ body {
     "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("../src/assets/images/revenant_kang_liu_1.png");
+  background-position: center center;
+  background-size: cover;
+  max-width: 1500px;
 }
 
 h1 {

@@ -41,7 +41,7 @@ const GetNames = (props: Props) => {
 
   return (
     <>
-      <div className="container">
+      {/* <div className="container"> */}
         {items.length ? (
           <ul>
             {items.map((item) => (
@@ -70,7 +70,7 @@ const GetNames = (props: Props) => {
         ) : (
           <p style={{ marginTop: "2rem" }}>Your list is empty.</p>
         )}
-      </div>
+      {/* </div> */}
     </>
   );
 };
